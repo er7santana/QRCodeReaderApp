@@ -30,12 +30,22 @@
                                     <action selector="didTapOnRead:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jCe-c1-st2"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e69-jb-qoT">
+                                <rect key="frame" x="178" y="547" width="58" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Copy"/>
+                                <connections>
+                                    <action selector="didTapOnCopy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uKh-lK-7qJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UH4-24-R8a" secondAttribute="bottom" constant="15" id="7ku-Y0-AEh"/>
                             <constraint firstItem="qDU-bo-Ag2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="B3j-6u-Ozg"/>
+                            <constraint firstItem="e69-jb-qoT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="E0t-XT-7fe"/>
+                            <constraint firstItem="e69-jb-qoT" firstAttribute="top" secondItem="qDU-bo-Ag2" secondAttribute="bottom" constant="61.5" id="K1V-QR-xTv"/>
                             <constraint firstItem="qDU-bo-Ag2" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Kgh-5l-VN1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UH4-24-R8a" secondAttribute="trailing" constant="20" id="Olw-Td-fp2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qDU-bo-Ag2" secondAttribute="trailing" constant="20" id="UWS-gy-ePW"/>
@@ -44,6 +54,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="xrr-Us-2qk"/>
                     <connections>
+                        <outlet property="copyButton" destination="e69-jb-qoT" id="QhP-GG-voo"/>
                         <outlet property="qrCodeLabel" destination="qDU-bo-Ag2" id="GWK-na-6A4"/>
                     </connections>
                 </viewController>

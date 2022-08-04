@@ -11,6 +11,7 @@ import AVFoundation
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var qrCodeLabel: UILabel!
+    @IBOutlet weak var copyButton: UIButton!
     
     private lazy var pickerController: UIImagePickerController = {
        let pickerController = UIImagePickerController()
@@ -20,12 +21,30 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         pickerController.sourceType = .photoLibrary
         return pickerController
     }()
-
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        hideResultFields()
+    }
+    
+    func hideResultFields() {
+        qrCodeLabel.isHidden = true
+        copyButton.isHidden = true
+    }
+    
     @IBAction func didTapOnRead(_ sender: Any) {
         navigationController?.present(pickerController, animated: true)
     }
     
+    @IBAction func didTapOnCopy(_ sender: Any) {
+        UIPasteboard.general.string = qrCodeLabel.text
+    }
+    
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        qrCodeLabel.isHidden = false
+        
         if let qrcodeImg = info[UIImagePickerController.InfoKey.originalImage] as? UIImage,
            let detector: CIDetector = CIDetector(ofType: CIDetectorTypeQRCode, context: nil, options: [ CIDetectorAccuracy: CIDetectorAccuracyHigh]) {
             
@@ -48,6 +67,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                 qrCodeLabel.text = "Nenhum QR Code encontrado"
             } else {
                 qrCodeLabel.text = qrCodeLink
+                copyButton.isHidden = false
             }
         } else {
             qrCodeLabel.text = "Erro ao ler QR Code"
