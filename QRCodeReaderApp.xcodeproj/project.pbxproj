@@ -37,19 +37,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		55A62D1BF63F23BFDFA11550 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		F8B79846289B4D5C002CD59E = {
 			isa = PBXGroup;
 			children = (
 				F8B79851289B4D5C002CD59E /* QRCodeReaderApp */,
 				F8B79850289B4D5C002CD59E /* Products */,
-				55A62D1BF63F23BFDFA11550 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
