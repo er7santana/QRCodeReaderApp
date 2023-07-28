@@ -36,6 +36,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         navigationController?.present(pickerController, animated: true)
     }
     
+    @IBAction func didTapOnScan(_ sender: Any) {
+        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "IDLeitorQr") as? IDAutenticacaoLeitorQRViewController {
+            vc.delegate = self
+            present(vc, animated: true)
+        }
+    }
+    
     @IBAction func didTapOnCopy(_ sender: Any) {
         UIPasteboard.general.string = qrCodeLabel.text
     }
@@ -63,17 +70,39 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                 qrCodeLink += feature.messageString ?? ""
             }
             
-            if qrCodeLink == ""{
-                qrCodeLabel.text = "Nenhum QR Code encontrado"
-            } else {
-                qrCodeLabel.text = qrCodeLink
-                copyButton.isHidden = false
-            }
+            displayQrCodeValue(qrCodeLink)
         } else {
             qrCodeLabel.text = "Erro ao ler QR Code"
         }
         self.dismiss(animated: true)
     }
+    
+    func displayQrCodeValue(_ qrValue: String) {
+        qrCodeLabel.isHidden = false
+        
+        if qrValue.isEmpty {
+            qrCodeLabel.text = "Nenhum QR Code encontrado"
+        } else {
+            qrCodeLabel.text = qrValue
+            copyButton.isHidden = false
+        }
+    }
 
 }
 
+// MARK: - QrReaderDelegate
+extension ViewController: QrReaderDelegate {
+    func didRead(qrValue: String) {
+        Logger.dbg(qrValue)
+        
+        displayQrCodeValue(qrValue)
+        
+        dismiss()
+    }
+    
+    func dismiss() {
+        dismiss(animated: true)
+    }
+    
+    
+}

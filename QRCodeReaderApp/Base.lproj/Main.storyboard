@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="p5L-QL-8NQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="p5L-QL-8NQ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,39 +18,52 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QRCode Value" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDU-bo-Ag2">
-                                <rect key="frame" x="20" y="465" width="374" height="20.5"/>
+                                <rect key="frame" x="20" y="467" width="374" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UH4-24-R8a">
-                                <rect key="frame" x="20" y="816" width="374" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="READ"/>
-                                <connections>
-                                    <action selector="didTapOnRead:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jCe-c1-st2"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e69-jb-qoT">
-                                <rect key="frame" x="178" y="547" width="58" height="31"/>
+                                <rect key="frame" x="175" y="549" width="64" height="34.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Copy"/>
                                 <connections>
                                     <action selector="didTapOnCopy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uKh-lK-7qJ"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="nvv-MC-XXd">
+                                <rect key="frame" x="20" y="807.5" width="374" height="34.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mD5-sb-Gjm">
+                                        <rect key="frame" x="0.0" y="0.0" width="167" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="SCAN"/>
+                                        <connections>
+                                            <action selector="didTapOnScan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zjs-hU-rMH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UH4-24-R8a">
+                                        <rect key="frame" x="207" y="0.0" width="167" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="OPEN"/>
+                                        <connections>
+                                            <action selector="didTapOnRead:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jCe-c1-st2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UH4-24-R8a" secondAttribute="bottom" constant="15" id="7ku-Y0-AEh"/>
                             <constraint firstItem="qDU-bo-Ag2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="B3j-6u-Ozg"/>
                             <constraint firstItem="e69-jb-qoT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="E0t-XT-7fe"/>
                             <constraint firstItem="e69-jb-qoT" firstAttribute="top" secondItem="qDU-bo-Ag2" secondAttribute="bottom" constant="61.5" id="K1V-QR-xTv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nvv-MC-XXd" secondAttribute="bottom" constant="20" id="KRb-Jt-rKq"/>
                             <constraint firstItem="qDU-bo-Ag2" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Kgh-5l-VN1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UH4-24-R8a" secondAttribute="trailing" constant="20" id="Olw-Td-fp2"/>
+                            <constraint firstItem="nvv-MC-XXd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Spa-zd-PJR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qDU-bo-Ag2" secondAttribute="trailing" constant="20" id="UWS-gy-ePW"/>
-                            <constraint firstItem="UH4-24-R8a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="c9f-ss-CxA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nvv-MC-XXd" secondAttribute="trailing" constant="20" id="szx-hy-JuT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xrr-Us-2qk"/>
@@ -62,13 +76,28 @@
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="109.82142857142857"/>
         </scene>
+        <!--Autenticacao LeitorQR View Controller-->
+        <scene sceneID="EHT-Fq-9vX">
+            <objects>
+                <viewController restorationIdentifier="IDLeitorQr" storyboardIdentifier="IDLeitorQr" id="kbq-0C-7FI" customClass="IDAutenticacaoLeitorQRViewController" customModule="QRCodeReaderApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UvP-YB-0vd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Exs-rQ-fDu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6fe-mw-Avl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="390" y="838"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZlC-C5-aUz">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="p5L-QL-8NQ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GWL-c6-8Mw">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

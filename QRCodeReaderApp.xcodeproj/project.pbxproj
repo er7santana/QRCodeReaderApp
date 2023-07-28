@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F88451DD2A73512500044EE4 /* MBJBarcodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88451DC2A73512500044EE4 /* MBJBarcodeReaderViewController.swift */; };
+		F88451DF2A73527200044EE4 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88451DE2A73527200044EE4 /* Logger.swift */; };
+		F88451E12A73530D00044EE4 /* IDAutenticacaoLeitorQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88451E02A73530D00044EE4 /* IDAutenticacaoLeitorQRViewController.swift */; };
 		F8B79853289B4D5C002CD59E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B79852289B4D5C002CD59E /* AppDelegate.swift */; };
 		F8B79855289B4D5C002CD59E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B79854289B4D5C002CD59E /* SceneDelegate.swift */; };
 		F8B79857289B4D5C002CD59E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B79856289B4D5C002CD59E /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F88451DC2A73512500044EE4 /* MBJBarcodeReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBJBarcodeReaderViewController.swift; sourceTree = "<group>"; };
+		F88451DE2A73527200044EE4 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		F88451E02A73530D00044EE4 /* IDAutenticacaoLeitorQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDAutenticacaoLeitorQRViewController.swift; sourceTree = "<group>"; };
 		F8B7984F289B4D5C002CD59E /* QRCodeReaderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRCodeReaderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B79852289B4D5C002CD59E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8B79854289B4D5C002CD59E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +69,9 @@
 				F8B7985B289B4D5D002CD59E /* Assets.xcassets */,
 				F8B7985D289B4D5D002CD59E /* LaunchScreen.storyboard */,
 				F8B79860289B4D5D002CD59E /* Info.plist */,
+				F88451DC2A73512500044EE4 /* MBJBarcodeReaderViewController.swift */,
+				F88451DE2A73527200044EE4 /* Logger.swift */,
+				F88451E02A73530D00044EE4 /* IDAutenticacaoLeitorQRViewController.swift */,
 			);
 			path = QRCodeReaderApp;
 			sourceTree = "<group>";
@@ -138,8 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F88451DF2A73527200044EE4 /* Logger.swift in Sources */,
 				F8B79857289B4D5C002CD59E /* ViewController.swift in Sources */,
 				F8B79853289B4D5C002CD59E /* AppDelegate.swift in Sources */,
+				F88451DD2A73512500044EE4 /* MBJBarcodeReaderViewController.swift in Sources */,
+				F88451E12A73530D00044EE4 /* IDAutenticacaoLeitorQRViewController.swift in Sources */,
 				F8B79855289B4D5C002CD59E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
