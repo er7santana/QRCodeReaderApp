@@ -30,9 +30,7 @@ public struct Logger {
                            value: String = ".",
                            info: [AnyHashable: Any]? = nil,
                            function: String = #function, file: NSString = #file, line: Int = #line) {
-        
-        let err = error ?? LoggerError(.unknown)
-        
+                
         NSLog("\n[ERROR]\t\(name)::\(file.lastPathComponent):\(line) >>\(function)\n\(value)\n")
     }
     
