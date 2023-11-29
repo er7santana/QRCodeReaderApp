@@ -18,10 +18,13 @@ profile
 DerivedData
 *.hmap
 *.ipa
+*.dSYM.zip
 
 # Bundler
 .bundle
 
+Podfile.lock
+Gemfile.lock
 Example/Pods/
 Example/fastlane/report.xml
 Example/fastlane/Preview.html
