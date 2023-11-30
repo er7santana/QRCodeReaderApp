@@ -1,8 +1,10 @@
-app_identifier("br.com.cacto.reader") # The bundle identifier of your app
-apple_id("er.7santana@gmail.com") # Your Apple Developer Portal username
+app_identifier ENV["APP_IDENTIFIER"]
 
-itc_team_id("123259791") # App Store Connect Team ID
-team_id("G6HATL4S2M") # Developer Portal Team ID
+# Apple ID
+apple_id ENV["APPLE_ID"]
 
-# For more information about the Appfile, see:
-#     https://docs.fastlane.tools/advanced/#appfile
+# Developer Portal Team ID
+team_id ENV["TEAM_ID"]
+
+# App Store Connect Team ID
+itc_team_id ENV["ITC_TEAM_ID"]

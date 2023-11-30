@@ -15,13 +15,37 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 ## iOS
 
-### ios beta
+### ios getTeamNames
 
 ```sh
-[bundle exec] fastlane ios beta
+[bundle exec] fastlane ios getTeamNames
 ```
 
-Push a new beta build to TestFlight
+Obter dados da conta App Store Connect
+
+### ios build
+
+```sh
+[bundle exec] fastlane ios build
+```
+
+Build
+
+### ios tf
+
+```sh
+[bundle exec] fastlane ios tf
+```
+
+Upload to Test Flight
+
+### ios inc
+
+```sh
+[bundle exec] fastlane ios inc
+```
+
+Incremente build number of the app
 
 ----
 
