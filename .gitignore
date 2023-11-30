@@ -19,6 +19,7 @@ DerivedData
 *.hmap
 *.ipa
 *.dSYM.zip
+fastlane/report.xml
 
 # Bundler
 .bundle
