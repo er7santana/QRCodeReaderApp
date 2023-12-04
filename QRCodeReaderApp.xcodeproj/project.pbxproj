@@ -8,6 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		88CDD506E4FF4508595DEDCD /* Pods_QRCodeReaderApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A5FA947B80318F03422984 /* Pods_QRCodeReaderApp.framework */; };
+		F87776EB2B1E0E410028BCED /* DSSBottomToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87776EA2B1E0E410028BCED /* DSSBottomToastView.swift */; };
+		F87776EE2B1E0E8B0028BCED /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87776ED2B1E0E8B0028BCED /* Icons.swift */; };
+		F87776F12B1E0ECE0028BCED /* IconsJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87776F02B1E0ECE0028BCED /* IconsJson.swift */; };
+		F87776F32B1E0EF10028BCED /* IconsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87776F22B1E0EF10028BCED /* IconsDataModel.swift */; };
+		F87776F52B1E0F470028BCED /* DSSIconLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87776F42B1E0F470028BCED /* DSSIconLabel.swift */; };
+		F87776F82B1E0F6B0028BCED /* DSSColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87776F72B1E0F6B0028BCED /* DSSColors.swift */; };
+		F87776FA2B1E0F8B0028BCED /* DSSTypography.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87776F92B1E0F8B0028BCED /* DSSTypography.swift */; };
+		F87776FC2B1E0FA30028BCED /* DSSUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87776FB2B1E0FA30028BCED /* DSSUtils.swift */; };
+		F87776FE2B1E10660028BCED /* DSSTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87776FD2B1E10660028BCED /* DSSTextButton.swift */; };
+		F87777002B1E107D0028BCED /* DSSButtonFundamental.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87776FF2B1E107D0028BCED /* DSSButtonFundamental.swift */; };
+		F87777022B1E10A00028BCED /* DSSCardContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87777012B1E10A00028BCED /* DSSCardContainer.swift */; };
+		F87777052B1E10D70028BCED /* CALayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87777042B1E10D70028BCED /* CALayer+Extension.swift */; };
+		F87777072B1E11160028BCED /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87777062B1E11160028BCED /* UIColor+Extension.swift */; };
+		F87777092B1E11610028BCED /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87777082B1E11610028BCED /* UIView+Extension.swift */; };
+		F877770D2B1E11C80028BCED /* DSSBottomToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = F877770C2B1E11C80028BCED /* DSSBottomToast.swift */; };
+		F87777112B1E131F0028BCED /* DSSFlame.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87777102B1E131F0028BCED /* DSSFlame.swift */; };
+		F87777122B1E13CD0028BCED /* SantanderIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F877770E2B1E12220028BCED /* SantanderIcons.ttf */; };
+		F87777132B1E13CF0028BCED /* SantanderIconsIos.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F877770F2B1E12280028BCED /* SantanderIconsIos.ttf */; };
 		F88451DD2A73512500044EE4 /* MBJBarcodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88451DC2A73512500044EE4 /* MBJBarcodeReaderViewController.swift */; };
 		F88451DF2A73527200044EE4 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88451DE2A73527200044EE4 /* Logger.swift */; };
 		F88451E12A73530D00044EE4 /* IDAutenticacaoLeitorQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88451E02A73530D00044EE4 /* IDAutenticacaoLeitorQRViewController.swift */; };
@@ -23,6 +41,24 @@
 		4202C713EAFDDC92340FB5C7 /* Pods-QRCodeReaderApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRCodeReaderApp.debug.xcconfig"; path = "Target Support Files/Pods-QRCodeReaderApp/Pods-QRCodeReaderApp.debug.xcconfig"; sourceTree = "<group>"; };
 		49D7371D9A2CCFA445369ABD /* Pods-QRCodeReaderApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRCodeReaderApp.release.xcconfig"; path = "Target Support Files/Pods-QRCodeReaderApp/Pods-QRCodeReaderApp.release.xcconfig"; sourceTree = "<group>"; };
 		73A5FA947B80318F03422984 /* Pods_QRCodeReaderApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QRCodeReaderApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F87776EA2B1E0E410028BCED /* DSSBottomToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSSBottomToastView.swift; sourceTree = "<group>"; };
+		F87776ED2B1E0E8B0028BCED /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
+		F87776F02B1E0ECE0028BCED /* IconsJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsJson.swift; sourceTree = "<group>"; };
+		F87776F22B1E0EF10028BCED /* IconsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsDataModel.swift; sourceTree = "<group>"; };
+		F87776F42B1E0F470028BCED /* DSSIconLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSSIconLabel.swift; sourceTree = "<group>"; };
+		F87776F72B1E0F6B0028BCED /* DSSColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSSColors.swift; sourceTree = "<group>"; };
+		F87776F92B1E0F8B0028BCED /* DSSTypography.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSSTypography.swift; sourceTree = "<group>"; };
+		F87776FB2B1E0FA30028BCED /* DSSUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSSUtils.swift; sourceTree = "<group>"; };
+		F87776FD2B1E10660028BCED /* DSSTextButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSSTextButton.swift; sourceTree = "<group>"; };
+		F87776FF2B1E107D0028BCED /* DSSButtonFundamental.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSSButtonFundamental.swift; sourceTree = "<group>"; };
+		F87777012B1E10A00028BCED /* DSSCardContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSSCardContainer.swift; sourceTree = "<group>"; };
+		F87777042B1E10D70028BCED /* CALayer+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+Extension.swift"; sourceTree = "<group>"; };
+		F87777062B1E11160028BCED /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		F87777082B1E11610028BCED /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		F877770C2B1E11C80028BCED /* DSSBottomToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSSBottomToast.swift; sourceTree = "<group>"; };
+		F877770E2B1E12220028BCED /* SantanderIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SantanderIcons.ttf; sourceTree = "<group>"; };
+		F877770F2B1E12280028BCED /* SantanderIconsIos.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SantanderIconsIos.ttf; sourceTree = "<group>"; };
+		F87777102B1E131F0028BCED /* DSSFlame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSSFlame.swift; sourceTree = "<group>"; };
 		F88451DC2A73512500044EE4 /* MBJBarcodeReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBJBarcodeReaderViewController.swift; sourceTree = "<group>"; };
 		F88451DE2A73527200044EE4 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		F88451E02A73530D00044EE4 /* IDAutenticacaoLeitorQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDAutenticacaoLeitorQRViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +101,61 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F87776E92B1E0E1D0028BCED /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				F87776EA2B1E0E410028BCED /* DSSBottomToastView.swift */,
+				F877770C2B1E11C80028BCED /* DSSBottomToast.swift */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		F87776EC2B1E0E740028BCED /* DSS */ = {
+			isa = PBXGroup;
+			children = (
+				F87777032B1E10CF0028BCED /* Extensions */,
+				F87777012B1E10A00028BCED /* DSSCardContainer.swift */,
+				F87776FF2B1E107D0028BCED /* DSSButtonFundamental.swift */,
+				F87776FB2B1E0FA30028BCED /* DSSUtils.swift */,
+				F87776FD2B1E10660028BCED /* DSSTextButton.swift */,
+				F87776F62B1E0F560028BCED /* Colors */,
+				F87776EF2B1E0EB50028BCED /* Icons */,
+				F87776E92B1E0E1D0028BCED /* Toast */,
+				F87777102B1E131F0028BCED /* DSSFlame.swift */,
+			);
+			path = DSS;
+			sourceTree = "<group>";
+		};
+		F87776EF2B1E0EB50028BCED /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				F87776ED2B1E0E8B0028BCED /* Icons.swift */,
+				F87776F02B1E0ECE0028BCED /* IconsJson.swift */,
+				F87776F22B1E0EF10028BCED /* IconsDataModel.swift */,
+				F87776F42B1E0F470028BCED /* DSSIconLabel.swift */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		F87776F62B1E0F560028BCED /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				F87776F72B1E0F6B0028BCED /* DSSColors.swift */,
+				F87776F92B1E0F8B0028BCED /* DSSTypography.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		F87777032B1E10CF0028BCED /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F87777042B1E10D70028BCED /* CALayer+Extension.swift */,
+				F87777062B1E11160028BCED /* UIColor+Extension.swift */,
+				F87777082B1E11610028BCED /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		F8B79846289B4D5C002CD59E = {
 			isa = PBXGroup;
 			children = (
@@ -86,11 +177,14 @@
 		F8B79851289B4D5C002CD59E /* QRCodeReaderApp */ = {
 			isa = PBXGroup;
 			children = (
+				F87776EC2B1E0E740028BCED /* DSS */,
 				F8B79852289B4D5C002CD59E /* AppDelegate.swift */,
 				F8B79854289B4D5C002CD59E /* SceneDelegate.swift */,
 				F8B79856289B4D5C002CD59E /* ViewController.swift */,
 				F8B79858289B4D5C002CD59E /* Main.storyboard */,
 				F8B7985B289B4D5D002CD59E /* Assets.xcassets */,
+				F877770E2B1E12220028BCED /* SantanderIcons.ttf */,
+				F877770F2B1E12280028BCED /* SantanderIconsIos.ttf */,
 				F8B7985D289B4D5D002CD59E /* LaunchScreen.storyboard */,
 				F8B79860289B4D5D002CD59E /* Info.plist */,
 				F88451DC2A73512500044EE4 /* MBJBarcodeReaderViewController.swift */,
@@ -160,7 +254,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8B7985F289B4D5D002CD59E /* LaunchScreen.storyboard in Resources */,
+				F87777132B1E13CF0028BCED /* SantanderIconsIos.ttf in Resources */,
 				F8B7985C289B4D5D002CD59E /* Assets.xcassets in Resources */,
+				F87777122B1E13CD0028BCED /* SantanderIcons.ttf in Resources */,
 				F8B7985A289B4D5C002CD59E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,11 +294,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				F88451DF2A73527200044EE4 /* Logger.swift in Sources */,
+				F87777072B1E11160028BCED /* UIColor+Extension.swift in Sources */,
+				F87777112B1E131F0028BCED /* DSSFlame.swift in Sources */,
 				F8B79857289B4D5C002CD59E /* ViewController.swift in Sources */,
+				F877770D2B1E11C80028BCED /* DSSBottomToast.swift in Sources */,
+				F87776EE2B1E0E8B0028BCED /* Icons.swift in Sources */,
+				F87776EB2B1E0E410028BCED /* DSSBottomToastView.swift in Sources */,
+				F87776FC2B1E0FA30028BCED /* DSSUtils.swift in Sources */,
+				F87776F52B1E0F470028BCED /* DSSIconLabel.swift in Sources */,
+				F87777022B1E10A00028BCED /* DSSCardContainer.swift in Sources */,
+				F87776F32B1E0EF10028BCED /* IconsDataModel.swift in Sources */,
 				F8B79853289B4D5C002CD59E /* AppDelegate.swift in Sources */,
 				F88451DD2A73512500044EE4 /* MBJBarcodeReaderViewController.swift in Sources */,
 				F88451E12A73530D00044EE4 /* IDAutenticacaoLeitorQRViewController.swift in Sources */,
+				F87777052B1E10D70028BCED /* CALayer+Extension.swift in Sources */,
+				F87777002B1E107D0028BCED /* DSSButtonFundamental.swift in Sources */,
+				F87776FE2B1E10660028BCED /* DSSTextButton.swift in Sources */,
+				F87776F12B1E0ECE0028BCED /* IconsJson.swift in Sources */,
+				F87776F82B1E0F6B0028BCED /* DSSColors.swift in Sources */,
 				F8B79855289B4D5C002CD59E /* SceneDelegate.swift in Sources */,
+				F87777092B1E11610028BCED /* UIView+Extension.swift in Sources */,
+				F87776FA2B1E0F8B0028BCED /* DSSTypography.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

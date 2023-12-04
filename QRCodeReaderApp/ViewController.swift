@@ -45,6 +45,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBAction func didTapOnCopy(_ sender: Any) {
         UIPasteboard.general.string = qrCodeLabel.text
+        guard let window = UIApplication.shared.keyWindow else { return }
+        let toastViewModel = DSSToastViewModel(
+            message: "Copied!",
+            icon: .Checkmark,
+            type: .success
+        )
+        DSSBottomToast(withViewModel: toastViewModel, andWindow: window).showQuickAlert()
     }
     
     
@@ -106,3 +113,4 @@ extension ViewController: QrReaderDelegate {
     
     
 }
+
